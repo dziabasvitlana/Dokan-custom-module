@@ -10,19 +10,18 @@ Add Custom module to Dokal module list in the file dokan_custom_module_example.p
 ```php
 add_filter( 'dokan_pro_modules', 'add_custom_module' );
 function add_custom_module( $modules ) {
-	$modules['custom_module'] = array(
-		'id'           => 'custom_module',
-		'name'         => __( 'Added My custom module' ),
-		'description'  => __( 'My custom module description' ),
-		'thumbnail'    => plugin_dir_url( __FILE__ ) . 'dokan-custom-module.png', // Custom module Image 
-		'module_file'  => plugin_dir_path( __FILE__ ) . 'module.php', // Main module class File
-		'module_class' => 'Custom_Module', // Main module Class
-		'plan'         => [ 'starter', 'professional', 'business', 'enterprise', ], // Your plan list
-		'doc_id'       => 991375017, // Any unique digital ID
-		'doc_link'     => 'https://upsite.top/wordpress-development/', // Your Custom module Description page
-	);
-	
-	return $modules;
+ $modules['custom_module'] = array(
+  'id'           => 'custom_module',
+  'name'         => __( 'Added My custom module' ),
+  'description'  => __( 'My custom module description' ),
+  'thumbnail'    => plugin_dir_url( __FILE__ ) . 'dokan-custom-module.png', // Custom module Image 
+  'module_file'  => plugin_dir_path( __FILE__ ) . 'module.php', // Main module class File
+  'module_class' => 'Custom_Module', // Main module Class
+  'plan'         => [ 'starter', 'professional', 'business', 'enterprise', ], // Your plan list
+  'doc_id'       => 991375017, // Any unique digital ID
+  'doc_link'     => 'https://upsite.top/wordpress-development/', // Your Custom module Description page
+ );
+ return $modules;
 }
 ```
 Add new Custom module Settings Tab to the Admin panel Dokan Settings
@@ -60,7 +59,7 @@ function load_settings_fields( $fields ) {
    'desc'    => __( 'Text field example description' ),
    'tooltip' => __( 'Tooltip example' ),
   ),
-  ... // Other fields
+  ... // Other fields examples
 }
 ```
 ### Used WordPress hooks
