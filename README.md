@@ -68,5 +68,5 @@ function load_settings_fields( $fields ) {
 + dokan_settings_sections
 + dokan_settings_fields
 ### Video denonstration
-[![video](http://upsite.top/wp-content/uploads/2024/01/Git_caption.png)](https://youtu.be/1__whDX4WFE)
+[![video](http://upsite.top/wp-content/uploads/2024/01/Git_caption_dmc.png)](https://youtu.be/1__whDX4WFE)
 
